@@ -42,7 +42,7 @@ keyboard = InlineKeyboardMarkup([
     [InlineKeyboardButton("✨ Commands", callback_data="cmd_command")],
     [InlineKeyboardButton("💡 Features", callback_data="feat_command"), InlineKeyboardButton("⚙️ Settings", callback_data="settings_command")],
     [InlineKeyboardButton("🟹 Plans", callback_data="upgrade_command")],
-    [InlineKeyboardButton("📖 Contact", url=f"tg://openmessage?user_id={OAMER}")]
+    [InlineKeyboardButton("📖 Contact", url=f"tg://openmessage?user_id={OWNER}")]
 ])
 @bot.on_message(filters.command("start"))
 async def start(bot, m: Message):
