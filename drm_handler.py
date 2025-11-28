@@ -335,7 +335,7 @@ async def drm_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 #........................................................................................................................................................................................
             try:
-                if m.text:
+               if m.text:
                     cc = f'[{name1} [{res}p].mkv]({link0})'
                     cc1 = f'[{name1}.pdf]({link0})'
                     cczip = f'[{name1}.zip]({link0})'
@@ -345,20 +345,20 @@ async def drm_handler(bot: Client, m: Message):
                 else:
                     if topic == "/yes":
                         if caption == "/cc1":
-                            cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{v_name} [{res}p].mkv`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
-                            cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{v_name}.pdf`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
-                            cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{v_name}.zip`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
-                            ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{v_name}.jpg`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
-                            cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{v_name}.html`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
-                            ccyt = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{v_name}.mp4`\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
-                            ccm = f'[🎵]Mp3 Id : {str(count).zfill(3)}\n**Audio Title :** `{v_name}.mp3`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
+                            cc = f'[🎥]Vid Id : {str(count).zfill(3)}\nVideo Title : {v_name} [{res}p].mkv\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}\n📝 𝐓𝐢𝐭𝐥𝐞 : {t_name}</b></blockquote>\n\nExtracted by📥➤{CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━'
+                            cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\nFile Title : {v_name}.pdf\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}\n📝 𝐓𝐢𝐭𝐥𝐞 : {t_name}</b></blockquote>\n\nExtracted by📥➤{CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━'
+                            cczip = f'[📁]Zip Id : {str(count).zfill(3)}\nZip Title : {v_name}.zip\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}\n📝 𝐓𝐢𝐭𝐥𝐞 : {t_name}</b></blockquote>\n\nExtracted by📥➤{CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━'
+                            ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\nImg Title : {v_name}.jpg\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}\n📝 𝐓𝐢𝐭𝐥𝐞 : {t_name}</b></blockquote>\n\nExtracted by📥➤{CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━'
+                            cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\nHtml Title : {v_name}.html\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}\n📝 𝐓𝐢𝐭𝐥𝐞 : {t_name}</b></blockquote>\n\nExtracted by📥➤{CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━'
+                            ccyt = f'[🎥]Vid Id : {str(count).zfill(3)}\n💙⃤ 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘 ➥ : {v_name}.mp4\n<a href="{url}">Click Here to Watch Stream</a>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}\n📝 𝐓𝐢𝐭𝐥𝐞 : {t_name}</b></blockquote>\n\nExtracted by➤{CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━'
+                            ccm = f'[🎵]Mp3 Id : {str(count).zfill(3)}\nAudio Title : {v_name}.mp3\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}\n📝 𝐓𝐢𝐭𝐥𝐞 : {t_name}</b></blockquote>\n\nExtracted by➤{CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━'
                         elif caption == "/cc2":
-                            cc = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>🎞️ Title :</b> {v_name}\n<b>├── Extention :  {CR} .mkv</b>\n<b>├── Resolution : [{res}]</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
-                            cc1 = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>📁 Title :</b> {v_name}\n<b>├── Extention :  {CR} .pdf</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
-                            cczip = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>📒 Title :</b> {v_name}\n<b>├── Extention :  {CR} .zip</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
-                            ccimg = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>🖼️ Title :</b> {v_name}\n<b>├── Extention :  {CR} .jpg</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
-                            ccm = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>🎵 Title :</b> {v_name}\n<b>├── Extention :  {CR} .mp3</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
-                            cchtml = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>🌐 Title :</b> {v_name}\n<b>├── Extention :  {CR} .html</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                            cc = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>🎞️ Title :</b> {v_name}\n<b>├── Extention :  {CR} .mkv</b>\n<b>├── Resolution : [{res}]</b>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\n🌟 Extracted By : {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━**"
+                            cc1 = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>📁 Title :</b> {v_name}\n<b>├── Extention :  {CR} .pdf</b>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\n🌟 Extracted By📥 : {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━**"
+                            cczip = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>📒 Title :</b> {v_name}\n<b>├── Extention :  {CR} .zip</b>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\n🌟 Extracted By 📥: {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━**"
+                            ccimg = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>🖼️ Title :</b> {v_name}\n<b>├── Extention :  {CR} .jpg</b>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\n🌟 Extracted By📥 : {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━**"
+                            ccm = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>🎵 Title :</b> {v_name}\n<b>├── Extention :  {CR} .mp3</b>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\n🌟 Extracted By📥 : {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━**"
+cchtml = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>🌐 Title :</b> {v_name}\n<b>├── Extention :  {CR} .html</b>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\n🌟 Extracted By📥 : {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━**"
                         else:
                             cc = f'<blockquote><b>⋅ ─ {t_name} ─ ⋅</b></blockquote>\n<b>{str(count).zfill(3)}.</b> {v_name} [{res}p] .mkv'
                             cc1 = f'<blockquote><b>⋅ ─ {t_name} ─ ⋅</b></blockquote>\n<b>{str(count).zfill(3)}.</b> {v_name} .pdf'
@@ -368,19 +368,19 @@ async def drm_handler(bot: Client, m: Message):
                             cchtml = f'<blockquote><b>⋅ ─ {t_name} ─ ⋅</b></blockquote>\n<b>{str(count).zfill(3)}.</b> {v_name} .html'
                     else:
                         if caption == "/cc1":
-                            cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p].mkv`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                            cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1}.pdf`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                            cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1}.zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n' 
-                            ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1}.jpg`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                            ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1}.mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                            cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1}.html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
+                            cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n🖤 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘 ➥ : {name1} [{res}p].mkv\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\nExtracted by📥➤ {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━'
+                            cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\nFile Title : {name1}.pdf\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\nExtracted by📥➤ {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━'
+                            cczip = f'[📁]Zip Id : {str(count).zfill(3)}\nZip Title : {name1}.zip\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\nExtracted by📥➤ {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━' 
+                            ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\nImg Title : {name1}.jpg\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\nExtracted by📥➤ {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━'
+                            ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\nAudio Title : {name1}.mp3\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\nExtracted by📥➤ {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━'
+                            cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\nHtml Title : {name1}.html\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\nExtracted by📥➤ {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━'
                         elif caption == "/cc2":
-                            cc = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>🎞️ Title :</b> {name1}\n<b>├── Extention :  {CR} .mkv</b>\n<b>├── Resolution : [{res}]</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
-                            cc1 = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>📁 Title :</b> {name1}\n<b>├── Extention :  {CR} .pdf</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
-                            cczip = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>📒 Title :</b> {name1}\n<b>├── Extention :  {CR} .zip</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
-                            ccimg = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>🖼️ Title :</b> {name1}\n<b>├── Extention :  {CR} .jpg</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
-                            ccm = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>🎵 Title :</b> {name1}\n<b>├── Extention :  {CR} .mp3</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
-                            cchtml = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>🌐 Title :</b> {name1}\n<b>├── Extention :  {CR} .html</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                            cc = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>🎞️ Title :</b> {name1}\n<b>├── Extention :  {CR} .mkv</b>\n<b>├── Resolution : [{res}]</b>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\n🌟 Extracted By : {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━**"
+                            cc1 = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>📁 Title :</b> {name1}\n<b>├── Extention :  {CR} .pdf</b>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\n🌟 Extracted By📥 : {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━**"
+                            cczip = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>📒 Title :</b> {name1}\n<b>├── Extention :  {CR} .zip</b>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\n🌟 Extracted By📥 : {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━**"
+                            ccimg = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>🖼️ Title :</b> {name1}\n<b>├── Extention :  {CR} .jpg</b>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\n🌟 Extracted By📥 : {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━**"
+                            ccm = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>🎵 Title :</b> {name1}\n<b>├── Extention :  {CR} .mp3</b>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\n🌟 Extracted By📥 : {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━**"
+cchtml = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>🌐 Title :</b> {name1}\n<b>├── Extention :  {CR} .html</b>\n<blockquote><b>🎯 Bᴀᴛᴄʜ Nᴀᴍᴇ : {b_name}</b></blockquote>\n\n🌟 Extracted By📥 : {CR}\n\n━━━━━━━✦🌟💗K S 💗🌟✦━━━━━━━**"
                         else:
                             cc = f'<b>{str(count).zfill(3)}.</b> {name1} [{res}p] .mkv'
                             cc1 = f'<b>{str(count).zfill(3)}.</b> {name1} .pdf'
@@ -388,6 +388,7 @@ async def drm_handler(bot: Client, m: Message):
                             ccimg = f'<b>{str(count).zfill(3)}.</b> {name1} .jpg'
                             ccm = f'<b>{str(count).zfill(3)}.</b> {name1} .mp3'
                             cchtml = f'<b>{str(count).zfill(3)}.</b> {name1} .html'
+
 #........................................................................................................................................................................................
                 remaining_links = len(links) - count
                 progress = (count / len(links)) * 100
