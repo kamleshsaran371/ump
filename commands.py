@@ -24,10 +24,13 @@ def register_commands_handlers(bot):
             [InlineKeyboardButton("🚻 User", callback_data="user_command"), InlineKeyboardButton("🚹 Owner", callback_data="owner_command")],
             [InlineKeyboardButton("🔙 Back to Main Menu", callback_data="back_to_main_menu")]
         ])
-        await callback_query.message.edit_text(
-    text=caption,
-    reply_markup=keyboard
-)
+        await callback_query.message.edit_media(
+        InputMediaPhoto(
+          media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+          caption=caption
+        ),
+        reply_markup=keyboard
+        )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
     @bot.on_callback_query(filters.regex("user_command"))
     async def help_button(client, callback_query):
@@ -60,10 +63,13 @@ def register_commands_handlers(bot):
             f"╰────────⊰◆⊱────────╯\n"
       )
     
-      await callback_query.message.edit_text(
-    text=caption,
-    reply_markup=keyboard
-)
+      await callback_query.message.edit_media(
+        InputMediaPhoto(
+          media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+          caption=caption
+        ),
+        reply_markup=keyboard
+        )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
     @bot.on_callback_query(filters.regex("owner_command"))
     async def help_button(client, callback_query):
